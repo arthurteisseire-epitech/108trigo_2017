@@ -25,7 +25,7 @@ def expo(res, next):
 def calc(matrix, end, fun):
     n = 0
     res = 0.0
-    numerator = [1 for i in matrix [1 for j in matrix[i]]]
+    numerator = [[1 for x in range(len(matrix[0]))] for y in range(len(matrix))]
     while (n < end):
         numerator = mult_matrix(numerator, matrix)
         curr = numerator / factorial(n)
