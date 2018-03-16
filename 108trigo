@@ -1,8 +1,11 @@
 #!/usr/bin/python3.6
 
 from parse import *
+from matrix import *
 
 try:
     args = parse_all()
+    split_matrix(args.ai)
+
 except:
     exit(84)
