@@ -1,5 +1,7 @@
 #!/usr/bin/python3.6
 
+from parse import *
+
 try:
     args = parse_all()
 except:
