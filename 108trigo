@@ -1,0 +1,6 @@
+#!/usr/bin/python3.6
+
+try:
+    args = parse_all()
+except:
+    exit(84)
