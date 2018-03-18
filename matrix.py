@@ -22,7 +22,7 @@ def gen_identity_matrix(len):
                 matrix[i][j] = 1
             j += 1
         i += 1
-        return (matrix)
+    return (matrix)
 
 
 def xcreate(row_len, col_len):

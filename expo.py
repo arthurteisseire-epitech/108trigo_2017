@@ -52,7 +52,6 @@ def calc(matrix, end, fun):
     res = [[0.00 for col in range(len(matrix))] for row in range(len(matrix))]
     numerator = matrix
     while (n < end):
-        #print("N^", n)
         if (n == 0):
             numerator = gen_identity_matrix(len(matrix))
         elif (n == 1):
@@ -61,7 +60,6 @@ def calc(matrix, end, fun):
             numerator = matrix_product(numerator, matrix)
         tmp_numerator = xcopy(numerator)
         curr = div_matrix(tmp_numerator, factorial(n))
-        #print_matrix(curr)
         res = ope(fun, res, curr, n)
         n += 1
     return (res)
