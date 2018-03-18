@@ -12,6 +12,19 @@ def print_matrix(matrix):
     for tab in matrix:
         print_tab_line(tab)
 
+def gen_identity_matrix(len):
+    matrix = xcreate(len, len)
+    i = 0
+    while (i < len):
+        j = 0
+        while (j < len):
+            if (i == j):
+                matrix[i][j] = 1
+            j += 1
+        i += 1
+        return (matrix)
+
+
 def xcreate(row_len, col_len):
     matrix = [[0 for row in range(col_len)] for col in range(row_len)]
     return (matrix)
