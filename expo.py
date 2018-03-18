@@ -54,7 +54,7 @@ def calc(matrix, end, fun):
     while (n < end):
         #print("N^", n)
         if (n == 0):
-            numerator = [[1.00 for col in range(len(matrix))] for row in range(len(matrix))]
+            numerator = gen_identity_matrix(len(matrix))
         elif (n == 1):
             numerator = matrix
         else:
