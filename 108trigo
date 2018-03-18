@@ -2,10 +2,18 @@
 
 from parse import *
 from matrix import *
-
+from expo import *
+"""
 try:
     args = parse_all()
-    split_matrix(args.ai)
+    matrix = split_matrix(args.ai)
+    matrix = calc(matrix, 50, args.fun)
+    print_matrix(matrix)
 
 except:
     exit(84)
+"""
+args = parse_all()
+matrix = split_matrix(args.ai)
+matrix = calc(matrix, 200, args.fun)
+print_matrix(matrix)
